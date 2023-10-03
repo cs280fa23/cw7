@@ -76,7 +76,7 @@ function renderQuiz(quiz: Quiz) {
       // True/False Questions
       ["True", "False"].forEach((option) => {
         const input = createRadioInput(
-          `q${index + 1}t`,
+          `q${index + 1}${option === "True" ? "t" : "f"}`,
           `q${index + 1}`,
           option,
         );
