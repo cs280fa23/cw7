@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/ico" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link href="/style.css" rel="stylesheet" />
+  </head>
+  <body
+    class="flex flex-col justify-center min-h-screen py-6 bg-gray-100 sm:py-12"
+  >
+    <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+      <div
+        class="relative px-4 py-10 mx-8 bg-white shadow md:mx-0 rounded-3xl sm:p-10"
+      >
+        <div class="max-w-md mx-auto">
+          <div class="flex items-center space-x-5">
+            <div
+              class="self-start block pl-2 text-xl font-semibold text-gray-700"
+            >
+              <h2 id="quiz-title" class="leading-relaxed">TypeScript Quiz</h2>
+            </div>
+          </div>
+          <div class="divide-y divide-gray-200">
+            <div
+              id="quiz-container"
+              class="py-8 space-y-4 text-base leading-6 text-gray-700 sm:text-lg sm:leading-7"
+            >
+              <ol class="pl-2 list-decimal list-inside">
+                <li class="mb-4">
+                  <label class="leading-loose">
+                    TypeScript is a superset of JavaScript.
+                  </label>
+                  <div class="flex gap-3 ml-5">
+                    <div class="flex">
+                      <input type="radio" name="q1" id="q1t" class="mt-1" />
+                      <label for="q1t" class="ml-1">True</label>
+                    </div>
+                    <div class="flex">
+                      <input type="radio" name="q1" id="q1f" class="mt-1" />
+                      <label for="q1f" class="ml-1">False</label>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-4">
+                  <label class="leading-loose">
+                    TypeScript cannot be run in a web browser.
+                  </label>
+                  <div class="flex gap-3 ml-5">
+                    <div class="flex">
+                      <input type="radio" name="q2" id="q2t" class="mt-1" />
+                      <label for="q2t" class="ml-1">True</label>
+                    </div>
+                    <div class="flex">
+                      <input type="radio" name="q2" id="q2f" class="mt-1" />
+                      <label for="q2f" class="ml-1">False</label>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-4">
+                  <label class="leading-loose">
+                    TypeScript was developed by Microsoft.
+                  </label>
+                  <div class="flex gap-3 ml-5">
+                    <div class="flex">
+                      <input type="radio" name="q3" id="q3t" class="mt-1" />
+                      <label for="q3t" class="ml-1">True</label>
+                    </div>
+                    <div class="flex">
+                      <input type="radio" name="q3" id="q3f" class="mt-1" />
+                      <label for="q3f" class="ml-1">False</label>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-4">
+                  <label class="leading-loose">
+                    Which one can be used to define an enumeration?
+                  </label>
+                  <div class="flex flex-col ml-5">
+                    <div class="flex">
+                      <input type="radio" name="q4" id="q4a" />
+                      <label for="q4a" class="ml-1">enum Keyword</label>
+                    </div>
+                    <div class="flex">
+                      <input type="radio" name="q4" id="q4b" />
+                      <label for="q4b" class="ml-1">enumeration Type</label>
+                    </div>
+                    <div class="flex">
+                      <input type="radio" name="q4" id="q4c" />
+                      <label for="q4c" class="ml-1">enum Type</label>
+                    </div>
+                    <div class="flex">
+                      <input type="radio" name="q4" id="q4d" />
+                      <label for="q4d" class="ml-1">enumerable Keyword</label>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-4">
+                  <label class="leading-loose">
+                    Which one is NOT a TypeScript data type?
+                  </label>
+                  <div class="flex flex-col ml-5">
+                    <div class="flex">
+                      <input type="radio" name="q5" id="q5a" class="mt-1" />
+                      <label for="q5a" class="ml-1">string</label>
+                    </div>
+                    <div class="flex">
+                      <input type="radio" name="q5" id="q5b" class="mt-1" />
+                      <label for="q5b" class="ml-1">number</label>
+                    </div>
+                    <div class="flex">
+                      <input type="radio" name="q5" id="q5c" class="mt-1" />
+                      <label for="q5c" class="ml-1">boolean</label>
+                    </div>
+                    <div class="flex">
+                      <input type="radio" name="q5" id="q5d" class="mt-1" />
+                      <label for="q5d" class="ml-1">character</label>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+            <div class="flex items-center pt-4">
+              <button
+                id="submit-btn"
+                class="flex items-center justify-center w-full px-4 py-3 text-white rounded-md focus:outline-none"
+                style="background-color: #3b82f6"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
