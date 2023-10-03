@@ -66,8 +66,8 @@ function renderQuiz(quiz: Quiz) {
       question.options.forEach((option, i) => {
         const char = String.fromCharCode(97 + i); // 97 is ASCII for 'a'
         const input = createRadioInput(
-          `q${index + 1}${char}`,
-          `q${index + 1}`,
+          `q${question.id}${char}`,
+          `q${question.id}`,
           option,
         );
         optionsContainer.appendChild(input);
@@ -76,8 +76,8 @@ function renderQuiz(quiz: Quiz) {
       // True/False Questions
       ["True", "False"].forEach((option) => {
         const input = createRadioInput(
-          `q${index + 1}${option === "True" ? "t" : "f"}`,
-          `q${index + 1}`,
+          `q${question.id}${option === "True" ? "t" : "f"}`,
+          `q${question.id}`,
           option,
         );
 
